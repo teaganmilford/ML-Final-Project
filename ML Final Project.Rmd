@@ -68,3 +68,19 @@ billboard %>%
   labs(title = "Diversity of Songs Over the Years")
 ```
 
+
+
+
+
+'''{r, Capital Metro data}
+metro <- read.csv('/Users/14072/Downloads/capmetro_UT.csv')
+
+library(ggplot2)
+
+metro$hour_of_day <- factor(metro$hour_of_day, levels = 0:23)
+boarding_by_hour_weekend <- aggregate(boarding ~ hour_of_day + weekend, data = metro, mean)
+
+ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weekend)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
+'''
