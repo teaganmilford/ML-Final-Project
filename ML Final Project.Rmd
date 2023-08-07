@@ -32,6 +32,10 @@ test_positive <- (true_pos+false_pos)
 test_pos_disease <- ((population * test_disease) / test_positive)
 cat("The probability that someone has a postive test and has the disease is", test_pos_disease)
 
+
+
+
+
 ```
 
 
@@ -58,6 +62,7 @@ top_10 <- billboard %>%
 
 top_10
 
+
 ```
 
 
@@ -68,20 +73,30 @@ top_10
 ```
 
 ```{r, Billboard Top 100, Part C}
+# Part C
+
 library(dplyr)
+
+billboard <- read.csv("/Users/14072/Downloads/billboard.csv")
+
+songs_10 <- billboard %>%
+  filter(weeks_on_chart >= 10)
+
+by_artist <- songs_10 %>%
+  group_by(performer) %>%
+  summarise(unique_songs = n_distinct(song))
+
+artist_30 <- by_artist %>%
+  filter(unique_songs >= 30)
+
 library(ggplot2)
 
-billboard %>%
-  group_by(song_id, performer, weeks_on_chart) %>%
-  filter(weeks_on_chart >= 10) %>%
-  summarize(count = n(), .groups = "drop") %>%
-  filter(count >= 30) %>% 
-  arrange(desc(count)) %>%
-  ggplot(aes(x = performer, y = count)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  labs(title = "Top Performers with Exactly 10 Weeks on Chart",
-       x = "Performer",
-       y = "Count")
+ggplot(data = artist_30, aes(x = reorder(performer, -unique_songs), y = unique_songs)) +
+  geom_bar(stat = "identity", fill = "blue") +
+  coord_flip() +
+  labs(x = "Performers", y = "Number of Songs", title = "Number of Songs by Performer") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
 
@@ -98,6 +113,7 @@ ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weeke
   geom_bar(stat = "identity", position = "dodge") +
   labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
 ```
+
 ```{r, Green Buildings Plot}
 library(ggplot2)
 
