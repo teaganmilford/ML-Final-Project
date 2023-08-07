@@ -68,7 +68,18 @@ top_10
 
 ```{r, Billboard Top 100 Part B}
 # Plot scatter plot of song diversity over years excluding year 1958 and 2021
+library(ggplot2)
+library(dplyr)
 
+billboard %>%
+   filter(year != "1958" & year != "2021") %>%
+   group_by(year) %>%
+   summarise(diversity = n_distinct(song)) %>%
+   ggplot(aes(x = as.numeric(year), y = diversity)) +
+   geom_line(colour = 'blue') +
+   xlab("Year") +
+   ylab("Number of Distinct Songs per Year") +
+   labs(title = "Diversity of Songs Over the Years")
   
 ```
 
