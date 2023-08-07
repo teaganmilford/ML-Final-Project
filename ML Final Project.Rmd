@@ -13,18 +13,23 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Part A
 r_clicker <- .3
+t_clicker <- .7
 yes <- .65
 no <- .35
+r_prob <- .5
 
-truth_yes <- (1-r_clicker)*yes
-cat("The probability of being a Truthful clicker who said yes is", truth_yes)
+truth_yes <- (yes - (r_clicker*r_prob))/t_clicker
+cat("The probability of being a Truthful clicker who said yes is", round(truth_yes,2), " ")
 
 # Part B
 test_disease <- 0.993
-no_disease <- 0.999
-population <- .000025
+no_disease <- 0.9999
+population <- 0.000025
+true_pos <- (test_disease * population)
+false_pos <- (1-no_disease)*(1-population)
+test_positive <- (true_pos+false_pos)
 
-test_pos_disease <- (population * test_disease)
+test_pos_disease <- ((population * test_disease) / test_positive)
 cat("The probability that someone has a postive test and has the disease is", test_pos_disease)
 
 ```
@@ -59,7 +64,7 @@ top_10
 ```{r, Billboard Top 100 Part B}
 # Plot scatter plot of song diversity over years excluding year 1958 and 2021
 
-
+  
 ```
 
 ```{r, Billboard Top 100, Part C}
