@@ -54,25 +54,34 @@ top_10 <- billboard %>%
 top_10
 
 ```
+
+
 ```{r, Billboard Top 100 Part B}
 # Plot scatter plot of song diversity over years excluding year 1958 and 2021
 
+
+```
+
+```{r, Billboard Top 100, Part C}
+library(dplyr)
+library(ggplot2)
+
 billboard %>%
-  filter(year != "1958" & year != "2021") %>%
-  group_by(year) %>%
-  summarise(diversity = n_distinct(song)) %>%
-  ggplot(aes(x = as.numeric(year), y = diversity)) +
-  geom_line(colour = 'blue') +
-  xlab("Year") +
-  ylab("Number of Distinct Songs per Year") +
-  labs(title = "Diversity of Songs Over the Years")
+  group_by(song_id, performer, weeks_on_chart) %>%
+  filter(weeks_on_chart >= 10) %>%
+  summarize(count = n(), .groups = "drop") %>%
+  filter(count >= 30) %>% 
+  arrange(desc(count)) %>%
+  ggplot(aes(x = performer, y = count)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(title = "Top Performers with Exactly 10 Weeks on Chart",
+       x = "Performer",
+       y = "Count")
 ```
 
 
 
-
-
-'''{r, Capital Metro data}
+```{r, Capital Metro data}
 metro <- read.csv('/Users/14072/Downloads/capmetro_UT.csv')
 
 library(ggplot2)
@@ -83,4 +92,27 @@ boarding_by_hour_weekend <- aggregate(boarding ~ hour_of_day + weekend, data = m
 ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weekend)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
-'''
+```
+```{r, Green Buildings Plot}
+library(ggplot2)
+
+ggplot(greenbuildings, aes(x = cluster_rent)) +
+  geom_histogram(binwidth = 5, fill = "skyblue", color = "black") +
+  labs(title = "Cluster Rent Histogram",
+       x = "Clusters",
+       y = "Average Rent per Cluster")
+
+ggplot(greenbuildings, aes(x = age, y = Rent)) +
+  geom_point(color = "black") +
+  geom_smooth(method = "lm", color = "skyblue") +
+  labs(title = "Scatterplot with Line",
+       x = "Age",
+       y = "Rent")
+
+ggplot(greenbuildings, aes(x = factor(renovated), y = age, fill = factor(renovated))) +
+  geom_boxplot(color = "skyblue") +
+  labs(title = "Box Plots by Renovation Status",
+       x = "Renovated",
+       y = "Age") +
+  scale_x_discrete(labels = c("Not Renovated", "Renovated"))
+```
