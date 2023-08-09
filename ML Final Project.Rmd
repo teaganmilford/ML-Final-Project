@@ -192,6 +192,35 @@ plot(pc1_scores, pc2_scores,
 ```{r, Clustering & Dimensionality Reduction: K Means}
 ```
 
+```{r, Market Segmentation}
+library(ggplot2)
+install.packages("ClusterR")
+library(ClusterR)
+library(foreach)
+install.packages("mosaic")
+library(mosaic)
+
+social_marketing <- read.csv('/Users/bethelkim/Downloads/social_marketing.csv', row.names = 1)
+social_marketing
+
+sm_t = t(social_marketing)
+
+row_to_exclude <- "chatter"
+row2_to_exclude <- "spam"
+
+sm_t2 <- subset(sm_t, row.names(sm_t) != row_to_exclude)
+sm_t3 <- subset(sm_t2, row.names(sm_t2) != row2_to_exclude)
+
+rowSums(sm_t2)
+
+sm_scaled = scale(sm_t3, center = TRUE, scale = TRUE)
+sm_dist_matrix = dist(sm_scaled, method = 'euclidean')
+
+hier_sm = hclust(sm_dist_matrix, method = 'complete')
+plot(hier_sm, cex = 0.7)
+# 8 clusters 
+```
+
 ```{r, Grocery Data}
 library(tidyverse)
 library(igraph)
@@ -220,3 +249,5 @@ igraph::write_graph(groceries_graph4, file='groceries4.graphml', format = "graph
 groceries_graph2 = associations2igraph(subset(grocrules, lift>2), associationsAsNodes = FALSE)
 igraph::write_graph(groceries_graph2, file='groceries2.graphml', format = "graphml")
 ```
+
+
