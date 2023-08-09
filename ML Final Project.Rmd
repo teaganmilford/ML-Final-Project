@@ -215,8 +215,8 @@ inspect(subset(grocrules, subset=lift > 10 & confidence > 0.6))
 
 # Write to a graph file to make a pretty graph later
 groceries_graph4 = associations2igraph(subset(grocrules, lift>4), associationsAsNodes = FALSE)
-igraph::write_graph(groceries_graph, file='groceries4.graphml', format = "graphml")
+igraph::write_graph(groceries_graph4, file='groceries4.graphml', format = "graphml")
 
-groceries_graph4 = associations2igraph(subset(grocrules, lift>2), associationsAsNodes = FALSE)
-igraph::write_graph(groceries_graph, file='groceries2.graphml', format = "graphml")
+groceries_graph2 = associations2igraph(subset(grocrules, lift>2), associationsAsNodes = FALSE)
+igraph::write_graph(groceries_graph2, file='groceries2.graphml', format = "graphml")
 ```
