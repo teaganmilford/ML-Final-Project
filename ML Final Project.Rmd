@@ -150,7 +150,7 @@ ggplot(greenbuildings, aes(x = factor(renovated), y = age, fill = factor(renovat
 ```
 
 
-'''{r, Clusting & Dimensionality Reduction: PCA}
+```{r, Clusting & Dimensionality Reduction: PCA}
 library(dplyr)
 library(stats)
 library(pdp)
@@ -184,9 +184,30 @@ pc2_scores <- pca_result$x[, "PC2"]
 plot(pc1_scores, pc2_scores, 
      xlab = "PC1 Score", ylab = "PC2 Score", 
      main = "Scatter Plot of PC1 vs. PC2")
-'''
+```
 
-'''{r, Clustering & Dimensionality Reduction: tSNE}
-'''
+```{r, Clustering & Dimensionality Reduction: tSNE}
+```
 
-'''{r, Clustering & Dimensionality Reduction: K Means}
+```{r, Clustering & Dimensionality Reduction: K Means}
+```
+```{r, Grocery Data}
+library(tidyverse)
+library(igraph)
+library(arules)  # has a big ecosystem of packages built around it
+library(arulesViz)
+groceries <- readLines("/Users/evanhadd/Downloads/groceries.txt")
+
+items_list <- strsplit(groceries, ",")
+
+# Convert the items list to a transactions object
+groceries_trans <- as(items_list, "transactions")
+
+
+grocrules = apriori(groceries_trans, 
+	parameter=list(support=.005, confidence=.1, maxlen=4))
+
+# Write to a graph file to make a pretty graph later
+groceries_graph = associations2igraph(subset(grocrules, lift>4), associationsAsNodes = FALSE)
+igraph::write_graph(groceries_graph, file='groceries.graphml', format = "graphml")
+```
