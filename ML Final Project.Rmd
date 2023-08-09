@@ -123,6 +123,8 @@ boarding_by_hour_weekend <- aggregate(boarding ~ hour_of_day + weekend, data = m
 ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weekend)) +
   geom_bar(stat = "identity", position = "dodge") +
   labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
+
+##note - we also have a visual on the python file...
 ```
 
 ```{r, Green Buildings Plot}
