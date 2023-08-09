@@ -191,6 +191,7 @@ plot(pc1_scores, pc2_scores,
 
 ```{r, Clustering & Dimensionality Reduction: K Means}
 ```
+
 ```{r, Grocery Data}
 library(tidyverse)
 library(igraph)
