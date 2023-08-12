@@ -16,8 +16,8 @@
 -all of these aspects (and more) make me skeptical of the conclusions.
 
 ## Clustering and Dimensionality Reduction
-### PCA
+#### PCA
 To investigate the wine data, we first made a scree plot to look at the explained variables compared to dimensionality. This plot reveals that there is a major drop (from 22.2% to 13.8%) in the percentage of explained variances when the dimension is changed from 2 to 3, and there is an additionally drastic drop (from 13.8% to 8.6%) when the dimension is changed from 3 to 4. Based on this, we created a cluster plot with 3 clusters that shows a clear segmentaton. There are some points that appear to be outliers in the blue and green clusters based on the visualization.
 We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of 'color' and 'quality'. 
 
-## Hierarchical Clustering
+#### Hierarchical Clustering
