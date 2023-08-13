@@ -31,11 +31,6 @@ test_positive <- (true_pos+false_pos)
 
 test_pos_disease <- ((population * test_disease) / test_positive)
 cat("The probability that someone has a postive test and has the disease is", test_pos_disease)
-
-
-
-
-
 ```
 
 
@@ -44,11 +39,12 @@ cat("The probability that someone has a postive test and has the disease is", te
 
 ```{r, Billboard Top 100 Part A}
 # Read in Data
-
-billboard <- read.csv("~/Downloads/billboard.csv")
+billboard <- read.csv("C:/Users/14072/Downloads/billboard.csv")
 library(ggplot2)
 library(tidyverse)
 library(dplyr)
+library(knitr)
+library(kableExtra)
 
 # Create table of top 10 most popular songs
 # First group by performer and song to make sure songs with same title aren't counted together
@@ -60,9 +56,10 @@ top_10 <- billboard %>%
   arrange(desc(count)) %>% 
   head(10)
 
+table_caption <- "Performers and their most popular songs, sorted by number of weeks on the Billboard Top 100 chart."
+kable(top_10, caption = table_caption, "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 top_10
-
-
 ```
 
 
@@ -72,14 +69,14 @@ library(ggplot2)
 library(dplyr)
 
 billboard %>%
-   filter(year != "1958" & year != "2021") %>%
-   group_by(year) %>%
-   summarise(diversity = n_distinct(song)) %>%
-   ggplot(aes(x = as.numeric(year), y = diversity)) +
-   geom_line(colour = 'blue') +
-   xlab("Year") +
-   ylab("Number of Distinct Songs per Year") +
-   labs(title = "Diversity of Songs Over the Years")
+  filter(year != "1958" & year != "2021") %>%
+  group_by(year) %>%
+  summarise(diversity = n_distinct(song)) %>%
+  ggplot(aes(x = as.numeric(year), y = diversity)) +
+  geom_line(colour = 'blue') +
+  xlab("Year") +
+  ylab("Number of Distinct Songs per Year") +
+  labs(title = "Diversity of Songs Over the Years", caption="Number of Distinct Songs per Year that appeared on the Billboard Top 100 chart, from 1959 - 2020. There is a clear decrease in song diversity between the late 1960s to the early 2000s, perhaps due to the increasing availability of music sharing services like radio, vinyls, CDs, and MP3 players, and the emergence of celebrity musicians fostered in by record labels. Following the early 2000s, there is an uptick in diversity, perhaps due to the increasing democrtization of music creation and recording platforms.")
   
 ```
 
@@ -152,7 +149,7 @@ ggplot(greenbuildings, aes(x = factor(renovated), y = age, fill = factor(renovat
 ```
 
 
-```{r, Clusting & Dimensionality Reduction: PCA}
+```{r, Clustering & Dimensionality Reduction: PCA}
 library(dplyr)
 library(stats)
 library(pdp)
@@ -163,10 +160,6 @@ head(wine)
 continuous_vars <- wine[, 1:11]
 
 pca_result <- prcomp(continuous_vars, scale = TRUE)
-
-#pdf("pca_plot.pdf", width = 10, height = 8)
-
-#plot(pca_result)
 
 v_try = rnorm(2)
 v_try = v_try/sqrt(sum(v_try^2))
