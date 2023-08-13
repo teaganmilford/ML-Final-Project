@@ -40,7 +40,7 @@ add discussion
 ## Association rule mining
 add maybe a bit of discussion/explanation
 
-## Answers in the ipynb file:
+## Questions addressed in the ipnyb file 'ML Final Project' and corresponding answers:
 ## Visual story telling part 2: Capitol Metro data
 some in rstudio
 
