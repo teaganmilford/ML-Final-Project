@@ -5,7 +5,7 @@
 # Questions addressed in the Rmd file 'ML Final Project' and corresponding answers:
 ## Probability Practice
 ### Part A:
-The probability of being a Truthgul clicker who said yes is 0.71.
+The probability of being a Truthful clicker who said yes is 0.71.
 ### Part B:
 The probability that someone has a positive test and has the disease is 0.20.
 
