@@ -108,6 +108,7 @@ ggplot(data = artist_30, aes(x = reorder(performer, -unique_songs), y = unique_s
 ```
 
 ```{r, Green Buildings Plot}
+greenbuildings <- read.csv('/Users/14072/Downloads/greenbuildings.csv')
 library(ggplot2)
 
 ggplot(greenbuildings, aes(x = cluster_rent)) +
@@ -249,7 +250,7 @@ plot(hier_sm, cex = 0.7)
 # 8 clusters 
 ```
 
-```{r, Grocery Data}
+```{r, Association rule mining: Grocery Data}
 library(tidyverse)
 library(igraph)
 library(arules)  # has a big ecosystem of packages built around it
