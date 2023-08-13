@@ -184,7 +184,40 @@ plot(pc1_scores, pc2_scores,
 ```{r, Clustering & Dimensionality Reduction: tSNE}
 ```
 
-```{r, Clustering & Dimensionality Reduction: K Means}
+```{r, Clustering & Dimensionality Reduction: Hierarchical Clustering}
+wine <- read.csv('/Users/14072/Downloads/wine.csv')
+
+columns_to_exclude <- c("quality", "color")
+wine_filtered <- wine[, !(names(wine) %in% columns_to_exclude)]
+wine_t <- t(wine_filtered)
+
+wine_scaled = scale(wine_t, center=TRUE, scale=TRUE)
+
+wine_distance_matrix = dist(wine_scaled, method='euclidean')
+
+hier_wine = hclust(wine_distance_matrix, method='average')
+
+plot(hier_wine, cex=0.8)
+
+cluster1 = cutree(hier_wine, k=6)
+summary(factor(cluster1))
+
+which(cluster1 == 1)
+which(cluster1 == 2)
+which(cluster1 == 3)
+
+hier_wine2 = hclust(wine_distance_matrix, method='single')
+
+plot(hier_wine2, cex=0.8)
+cluster2 = cutree(hier_wine2, k=6)
+summary(factor(cluster2))
+
+which(cluster2 == 1)
+which(cluster2 == 2)
+which(cluster2 == 3)
+
+summary(factor(cluster2))
+print(cluster1)
 ```
 
 ```{r, Market Segmentation}
