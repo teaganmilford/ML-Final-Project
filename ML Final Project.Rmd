@@ -76,7 +76,13 @@ billboard %>%
   geom_line(colour = 'blue') +
   xlab("Year") +
   ylab("Number of Distinct Songs per Year") +
-  labs(title = "Diversity of Songs Over the Years", caption="Number of Distinct Songs per Year that appeared on the Billboard Top 100 chart, from 1959 - 2020. There is a clear decrease in song diversity between the late 1960s to the early 2000s, perhaps due to the increasing availability of music sharing services like radio, vinyls, CDs, and MP3 players, and the emergence of celebrity musicians fostered in by record labels. Following the early 2000s, there is an uptick in diversity, perhaps due to the increasing democrtization of music creation and recording platforms.")
+  labs(title = "Diversity of Songs Over the Years", caption="Number of Distinct Songs per Year that appeared \
+       on the Billboard Top 100 chart, from 1959 - 2020. There is a clear decrease \
+       in song diversity between the late 1960s to the early 2000s, perhaps due to the \
+       increasing availability of music sharing services like radio, vinyls, CDs, and MP3  \
+       players, and the emergence of celebrity musicians fostered in by record labels. \
+       Following the early 2000s, there is an uptick in diversity, perhaps due to the \
+       increasing democrtization of music creation and recording platforms.")
   
 ```
 
