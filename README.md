@@ -1,9 +1,8 @@
 # ML-Final-Project
 Collaborators: Teagan Milford, Madeleine Cope, Bethel Kim, Evan Hadd
 STA380 Exercises
+All questions addressed in the 'ML Final Project' Rmd file unless otherwise stated and linked to an ipnyb.
 
-
-## Questions addressed in the Rmd file 'ML Final Project' and corresponding answers:
 ## Probability Practice
 ### Part A:
 The probability of being a Truthful clicker who said yes is 0.71.
@@ -15,6 +14,8 @@ The probability that someone has a positive test and has the disease is 0.20.
 The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a (much) lower rental price than a non-green building near a park and many walkable businesses. 
 The cluster variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
 Next, we looked at the relationship between rent price and the age of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
+
+(add more here)
 So, we constructd a boxplot that considers age and whether a building has been renovated. This reveals that ....
 
 ## Visual story telling part 2: Capitol Metro data
@@ -77,9 +78,3 @@ In conclusion, we found that the two plots showed us that there seem to be trend
 
 ## Association rule mining
 add maybe a bit of discussion/explanation
-
-## Questions addressed in the ipnyb file 'ML Final Project' and corresponding answers:
-## Visual story telling part 2: Capitol Metro data
-some in rstudio
-
-
