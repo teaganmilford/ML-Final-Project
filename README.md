@@ -47,7 +47,7 @@ We also created a scatterplot of Principle Component 1 and Principle Component 2
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/2decc63a-f37f-40e4-aed2-12d99d69b276)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/912757fb-9ee8-456d-a442-31e661adf21a)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/26feb506-568b-4acf-a094-30f162edd50b)
 
 
 ### Hierarchical Clustering
