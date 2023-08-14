@@ -46,6 +46,9 @@ We also created a scatterplot of Principle Component 1 and Principle Component 2
 <img width="214" alt="dae763c2-2d5b-4f0e-96da-9b1856922e05" src="https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c3e56877-f5ef-49db-a11a-c4f28b238f3c">
 
 
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/11b2d4ad-1133-45a6-8172-1875fe6fd432)
+
+
 ### Hierarchical Clustering
 To conduct hierarchical clustering, we filtered the wine data to exclude `color` and `quality`, then created a wine distance matrix using euclidean distance. We decided to try clustering using two methods - average and single - so we could look at how average pairwise distances and minimum point distances between clusters compare. 
 Neither clustering method was especially effective in clustering the points. Both use `total sulfur dioxide` as the overarching factor and `free sulfur dioxide` as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
