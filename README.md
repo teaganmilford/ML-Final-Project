@@ -43,9 +43,9 @@ Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford
 To investigate the wine data, we first made a scree plot to look at the explained variables compared to dimensionality. This plot reveals that there is a major drop in the percentage of explained variances when the dimension is changed from 2 to 3, and there is an additionally drastic drop when the dimension is changed from 3 to 4. Based on this, we created a cluster plot with 3 clusters that shows a clear segmentaton. There are some points that appear to be outliers in the blue and green clusters based on the visualization.
 We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of `color` and `quality`. 
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/4755c417-8065-4035-bc8d-a1fa2e49ee40)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/9bdecd3f-daf4-44ae-9b53-2f2b01a2ae23)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/2decc63a-f37f-40e4-aed2-12d99d69b276)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/b57d5a96-352e-4566-b725-a73945fc7bb8)
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/26feb506-568b-4acf-a094-30f162edd50b)
 
