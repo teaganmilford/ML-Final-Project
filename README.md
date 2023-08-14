@@ -27,11 +27,9 @@ Next, we looked at the relationship between `rent price` and the `age` of the bu
 So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This shows that the median age of a building that has not been renovated is aroung 25 years, while the median age of a building that has been renovated is aronud 75 years. This suggests that age is not necessarily a characterizing factor since renovations can make major improvements to the existing stucture.
 Overall, we are skeptical of the stats guru's assessment since it does not address the potential confounding relationships between the variables, like how location could heavily influence rental prices, and does not seem rooted in the realities of real estate trends.
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/b0cc8adc-0da0-43f8-a657-d9021e9aac01)
-
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/9be18449-b5ed-4d4e-9b7f-e6a8ec779214)
-
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/12920dd5-46e3-482e-89ab-90fb51d40ead)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/9dbcd617-e9e3-4a5c-86d8-c1019b364ecd)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/38412612-99de-46cd-8019-13bbb4f9f92d)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c5092044-2fc8-436a-b5c0-42d8e42b51e7)
 
 
 ## Visual story telling part 2: Capitol Metro data
