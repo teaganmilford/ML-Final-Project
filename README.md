@@ -107,8 +107,10 @@ In conclusion, we found that the two plots showed us that there seem to be trend
 This study involved analyzing a dataset of people's grocery store baskets, aiming to construct a matrix that reveals the likelihood of particular purchases based on the presence of specific items in their carts. Initially, we employed a support threshold of 0.005, ensuring that the associations between items were not just coincidental. Subsequently, a lift threshold of 2 was applied, as the data lacked instances of high lift values. However, the resulting lift 2 graph proved somewhat intricate and congested around a few central items. As a remedy, we re-evaluated the connections using a lift threshold of 4, which isolated only the most prominent items.
 
 Within the lift 4 model, we identified six items that hold the highest significance for a grocery store. These items, due to their perishable nature, are in high demand and are consequently purchased most frequently. These findings possess valuable implications for optimizing grocery store layout and design. Given the distinctiveness of these six items, strategically distributing them throughout the store can be advantageous, encouraging customers to purchase additional items as they traverse these strategically placed aisles.
+<img width="731" alt="Grocieries Lift 4 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/effe48ad-552c-44f9-9b18-1ba408aa993f">
 
 Furthermore, the lift 2 graph can serve as a tool for organizing items in close proximity or designing displays that stimulate the purchase of complementary products. In essence, grocery stores consist of staple items, notably perishables, and complementary peripheral items. Understanding the categorization of food items is pivotal for store layout planning, offering the potential to enhance overall profitability.
+<img width="724" alt="Grocieries Lift 2 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/dd778f80-5d5a-4ac5-8686-d284ca5c4a21">
 
 Refer to the ["[GraphML Lift 2](https://github.com/teaganmilford/ML-Final-Project/blob/b4845c32ac650ac5293afabbc0c1f1c5ee0ca16d/groceries2.graphml)"]
 
