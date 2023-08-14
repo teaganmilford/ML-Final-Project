@@ -44,7 +44,8 @@ To investigate the wine data, we first made a scree plot to look at the explaine
 We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of `color` and `quality`. 
 
 <img width="214" alt="dae763c2-2d5b-4f0e-96da-9b1856922e05" src="https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c3e56877-f5ef-49db-a11a-c4f28b238f3c">
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/fb6fde21-6e9b-41cf-8479-5e9e2b65c9b0)
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/ef9f4c28-1031-4a2b-bfe3-7408506e4832)
 
 
 
@@ -112,6 +113,4 @@ Refer to the ["[GraphML Lift 4](https://github.com/teaganmilford/ML-Final-Projec
 ## Image Classification with Neural Networks
 Refer to the Python Notebook: ["[Neural Network](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
 
-### Question: 
-
-We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of __________. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows ________.
+We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'.
