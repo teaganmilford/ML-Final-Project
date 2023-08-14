@@ -30,7 +30,7 @@ To conduct hierarchical clustering, we filtered the wine data to exclude 'color'
 Neither clustering method was especially effective in clustering the points. Both use 'total sulfur dioxide' as the overarching factor and 'free sulfur dioxide' as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
 
 ### tSNE
-
+["https://github.com/teaganmilford/ML-Final-Project/blob/4c56d73dc37a8bbaf3c9ad506cd84ee25d693297/tSNE%20Red%20%26%20White%20Wine.ipynb"]
 To conduct a tSNE, we first extracted the eleven features (chemical properties) used for the analysis from the wine dataset (by selecting all rows and columns from index 0 to index 10). These columns represent the chemical properties of the wine samples. We then perform the tSNE algorithm and set the tSNE feature space to two dimensions for visualization. For reproducibility, we set the random state to 42. The output is a scatter plot that compares red and white wines based on their chemical properties. The scatterplot (featured below) shows a clear division between red and white wines. There is a subtle cluster that shows a slight overlap between certain red and white wines. This subtle cluster may represent a subset of reds and whites that share certain common chemical qualities, which may imply that there are certain reds and whites that are similar (e.g. dryer, less sweet, etc.) This may also contribute to the differentiation between higher and lower qualities. 
 
 ![wine- tSNE](https://github.com/teaganmilford/ML-Final-Project/assets/122923906/a9a33690-3701-47c4-b14a-d8f4033d4121)
@@ -45,7 +45,7 @@ Below is the cluster dendrogram that represents the market segments described ab
 ![MarketSegmentation](https://github.com/teaganmilford/ML-Final-Project/assets/122923906/06c40b19-a112-4466-80d1-f9b650520fc5)
 
 ## The Reuters Corpus
-[Reuters file]["[Reuters .ipynb](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
+["[Reuters .ipynb](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
 ### Question: 
 The Reuters C50 text dataset contains various article pieces written by a wide variety of authors. Amidst this vast information, we were especially curious to analyze the potential similarities and trends we could discover. Which words are similar? Are these words consistent with a specific topic? Which authors write about similar content? In this sense, we aimed to examine which words could be grouped together, what topics we could discover from these groupings, and which authors fell into similar categories.  
 
