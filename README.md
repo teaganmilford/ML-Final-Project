@@ -115,12 +115,13 @@ Within the lift 4 model, we identified six items that hold the highest significa
 Furthermore, the lift 2 graph can serve as a tool for organizing items in close proximity or designing displays that stimulate the purchase of complementary products. In essence, grocery stores consist of staple items, notably perishables, and complementary peripheral items. Understanding the categorization of food items is pivotal for store layout planning, offering the potential to enhance overall profitability.
 
 <img width="724" alt="Grocieries Lift 2 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/dd778f80-5d5a-4ac5-8686-d284ca5c4a21">
-
+(Graph with lift 2 and labels)
 <img width="731" alt="Grocieries Lift 4 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/effe48ad-552c-44f9-9b18-1ba408aa993f">
+(Graph with lift 4 and labels)
 
 ## Image Classification with Neural Networks
 Refer to the Python Notebook: ["[Neural Network](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
 
-We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'.
+We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'. Utilizing the confusion matrix it can be seen that the model struggled between Aannual Crop and Permanat Crop as well as Sea Lake and Forest. The confusion may have come from the fact that these images looked very similar are were low enough quality it couldn't make accurate distinctions. The issues are really apparent in the highway folder where highways were through forests or lakes and not obvious enough in the actual photo to create accurate predictions. 
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/d8b1482a-671c-4e6c-9cae-ff61812b3fa1)
