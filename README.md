@@ -95,4 +95,8 @@ Refer to the ["[GraphML Lift 2](https://github.com/teaganmilford/ML-Final-Projec
 Refer to the ["[GraphML Lift 4](https://github.com/teaganmilford/ML-Final-Project/blob/519ec0ba0aa848ba7b46742fe4ae8fcbbdc40503/groceries4.graphml)"]
 
 ## Image Classification with Neural Networks
+Refer to the Python Notebook: ["[Neural Network]([https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
+
+### Question: 
+
 We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of __________. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows ________.
