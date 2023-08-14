@@ -44,9 +44,8 @@ To investigate the wine data, we first made a scree plot to look at the explaine
 We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of `color` and `quality`. 
 
 <img width="214" alt="dae763c2-2d5b-4f0e-96da-9b1856922e05" src="https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c3e56877-f5ef-49db-a11a-c4f28b238f3c">
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/fb6fde21-6e9b-41cf-8479-5e9e2b65c9b0)
 
-
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/11b2d4ad-1133-45a6-8172-1875fe6fd432)
 
 
 ### Hierarchical Clustering
