@@ -1,6 +1,8 @@
 # ML-Final-Project
 Collaborators: Teagan Milford, Madeleine Cope, Bethel Kim, Evan Hadd
+
 STA380 Exercises
+
 All questions addressed in the 'ML Final Project' Rmd file unless otherwise stated and linked to an ipnyb.
 
 ## Probability Practice
