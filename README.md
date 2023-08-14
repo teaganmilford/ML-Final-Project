@@ -18,7 +18,7 @@ Next, we looked at the relationship between rent price and the age of the buildi
 So, we constructd a boxplot that considers age and whether a building has been renovated. This reveals that ....
 
 ## Visual story telling part 2: Capitol Metro data
-some in python
+See file 'ML Final Project CapMet'
 
 ## Clustering and Dimensionality Reduction
 ### PCA
