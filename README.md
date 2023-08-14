@@ -12,7 +12,7 @@ The probability of being a Truthful clicker who said yes is 0.71.
 The probability that someone has a positive test and has the disease is 0.20.
 
 ## Wrangling the Billboard Top 100
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c4ad7eb1-1c27-4530-9741-b658231fb11c)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/4a6605f2-10c7-44f0-b579-13c4d829498f)
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/afba0cf2-acb1-49fe-95b9-47479c709d5e)
 
