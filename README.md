@@ -1,8 +1,9 @@
 # ML-Final-Project
-## Collaborators: Teagan Milford, Madeleine Cope, Bethel Kim, Evan Hadd
-## STA380 Exercises
+Collaborators: Teagan Milford, Madeleine Cope, Bethel Kim, Evan Hadd
+STA380 Exercises
 
-# Questions addressed in the Rmd file 'ML Final Project' and corresponding answers:
+
+## Questions addressed in the Rmd file 'ML Final Project' and corresponding answers:
 ## Probability Practice
 ### Part A:
 The probability of being a Truthful clicker who said yes is 0.71.
