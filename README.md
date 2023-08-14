@@ -12,7 +12,7 @@ The probability of being a Truthful clicker who said yes is 0.71.
 The probability that someone has a positive test and has the disease is 0.20.
 
 ## Wrangling the Billboard Top 100
-## Visual story telling part 1: green buildings
+## Visual story telling part 1: Green Buildings
 The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a (much) lower rental price than a non-green building near a park and many walkable businesses. 
 The cluster variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
 Next, we looked at the relationship between rent price and the age of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
