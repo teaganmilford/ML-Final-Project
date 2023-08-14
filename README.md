@@ -45,7 +45,7 @@ Below is the cluster dendrogram that represents the market segments described ab
 ![MarketSegmentation](https://github.com/teaganmilford/ML-Final-Project/assets/122923906/06c40b19-a112-4466-80d1-f9b650520fc5)
 
 ## The Reuters Corpus
-[Reuters file]["Reuters .ipynb"]
+[Reuters file]["[Reuters .ipynb](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
 ### Question: 
 The Reuters C50 text dataset contains various article pieces written by a wide variety of authors. Amidst this vast information, we were especially curious to analyze the potential similarities and trends we could discover. Which words are similar? Are these words consistent with a specific topic? Which authors write about similar content? In this sense, we aimed to examine which words could be grouped together, what topics we could discover from these groupings, and which authors fell into similar categories.  
 
