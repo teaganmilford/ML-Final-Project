@@ -21,7 +21,7 @@ Next, we looked at the relationship between rent price and the age of the buildi
 So, we constructd a boxplot that considers age and whether a building has been renovated. This reveals that ....
 
 ## Visual story telling part 2: Capitol Metro data
-["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
+Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
 
 ![capmet](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/2f71d239-feaf-4307-b06a-7f2a98ba9e48)
 
@@ -35,7 +35,7 @@ To conduct hierarchical clustering, we filtered the wine data to exclude 'color'
 Neither clustering method was especially effective in clustering the points. Both use 'total sulfur dioxide' as the overarching factor and 'free sulfur dioxide' as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
 
 ### tSNE
-["[tSNE - Wine](https://github.com/teaganmilford/ML-Final-Project/blob/4c56d73dc37a8bbaf3c9ad506cd84ee25d693297/tSNE%20Red%20%26%20White%20Wine.ipynb)"]
+Refer to the Python Notebook: ["[tSNE - Wine](https://github.com/teaganmilford/ML-Final-Project/blob/4c56d73dc37a8bbaf3c9ad506cd84ee25d693297/tSNE%20Red%20%26%20White%20Wine.ipynb)"]
 
 To conduct a tSNE, we first extracted the eleven features (chemical properties) used for the analysis from the wine dataset (by selecting all rows and columns from index 0 to index 10). These columns represent the chemical properties of the wine samples. We then perform the tSNE algorithm and set the tSNE feature space to two dimensions for visualization. For reproducibility, we set the random state to 42. The output is a scatter plot that compares red and white wines based on their chemical properties. The scatterplot (featured below) shows a clear division between red and white wines. There is a subtle cluster that shows a slight overlap between certain red and white wines. This subtle cluster may represent a subset of reds and whites that share certain common chemical qualities, which may imply that there are certain reds and whites that are similar (e.g. dryer, less sweet, etc.) This may also contribute to the differentiation between higher and lower qualities. 
 
@@ -45,13 +45,15 @@ To conduct a tSNE, we first extracted the eleven features (chemical properties) 
 Out of all the techniques we tried, tSNE appeared to have the clearest distinguishment between the red and white wines. In comparison to the other visuals, the scatterplot for tSNE showed a clearer visual divide between red and white wines. 
 
 ## Market Segmentation
+Refer to the Market Segmentation section of the ["[Market Segmentation](https://github.com/teaganmilford/ML-Final-Project/blob/e3ddd6de17817d53d53e41f349820cda1042ae3e/ML%20Final%20Project.Rmd)"] R file. 
+
 We used hierarchical clustering in order to better identify NutrientH20’s potential market segments. This clustering method identified eight clusters of which three can be identified as interesting and plausibly impactful market segments. The first segment included categories `current events` and `shopping`, which speaks to multiple relationships (e.g. current events and fashion trends, financial current events and market fluctuations). The second segment included categories `travel` and `categories`. This cluster reflects an audience market segment that takes a strong interest in the impact of international affairs. The third segment includes `sports fandom`, `food`, `family`, `religion`, `parenting`, and `school`. Although this cluster is vast, it accurately identifies a subset of NutrientH20’s audience that is highly family-centered. All the topics reflect content that is highly valued by the typical nuclear family in America. NutrientH20 should pay special attention to this audience segment and target families as customers through these various interest avenues.  The fourth segment the clustering has identified is perhaps the most obvious to NutrientH20’s target audience. This segment includes categories `health nutrition` and `personal fitness`. It makes sense that NutrientH20 has a specific audience intentionally interested and devoted to personal health. In conclusion, hierarchical clustering illustrated that NutrientH20 has a very diverse variety of audience (reflected in their Twitter followers). However, there are clear segments within their audiences based on complementary interests. NutrientH20 can use these segment identifications to improve its marketing, efficiently target certain audiences, and overall increase its sales and approval ratings. 
 
 Below is the cluster dendrogram that represents the market segments described above: 
 ![MarketSegmentation](https://github.com/teaganmilford/ML-Final-Project/assets/122923906/06c40b19-a112-4466-80d1-f9b650520fc5)
 
 ## The Reuters Corpus
-["[Reuters .ipynb](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
+Refer to the Python Notebook: ["[Reuters](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
 ### Question: 
 The Reuters C50 text dataset contains various article pieces written by a wide variety of authors. Amidst this vast information, we were especially curious to analyze the potential similarities and trends we could discover. Which words are similar? Are these words consistent with a specific topic? Which authors write about similar content? In this sense, we aimed to examine which words could be grouped together, what topics we could discover from these groupings, and which authors fell into similar categories.  
 
