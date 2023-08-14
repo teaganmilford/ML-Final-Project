@@ -43,10 +43,11 @@ Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford
 To investigate the wine data, we first made a scree plot to look at the explained variables compared to dimensionality. This plot reveals that there is a major drop in the percentage of explained variances when the dimension is changed from 2 to 3, and there is an additionally drastic drop when the dimension is changed from 3 to 4. Based on this, we created a cluster plot with 3 clusters that shows a clear segmentaton. There are some points that appear to be outliers in the blue and green clusters based on the visualization.
 We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of `color` and `quality`. 
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/8ba74d74-651e-4086-96ff-5f16932e4fde)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/4755c417-8065-4035-bc8d-a1fa2e49ee40)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/ef9f4c28-1031-4a2b-bfe3-7408506e4832)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/2decc63a-f37f-40e4-aed2-12d99d69b276)
 
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/912757fb-9ee8-456d-a442-31e661adf21a)
 
 
 ### Hierarchical Clustering
@@ -120,3 +121,5 @@ Furthermore, the lift 2 graph can serve as a tool for organizing items in close 
 Refer to the Python Notebook: ["[Neural Network](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
 
 We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'.
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/d8b1482a-671c-4e6c-9cae-ff61812b3fa1)
