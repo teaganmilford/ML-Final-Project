@@ -31,11 +31,6 @@ test_positive <- (true_pos+false_pos)
 
 test_pos_disease <- ((population * test_disease) / test_positive)
 cat("The probability that someone has a postive test and has the disease is", test_pos_disease)
-
-
-
-
-
 ```
 
 
@@ -44,11 +39,12 @@ cat("The probability that someone has a postive test and has the disease is", te
 
 ```{r, Billboard Top 100 Part A}
 # Read in Data
-
-billboard <- read.csv("~/Downloads/billboard.csv")
+billboard <- read.csv("C:/Users/14072/Downloads/billboard.csv")
 library(ggplot2)
 library(tidyverse)
 library(dplyr)
+library(knitr)
+library(kableExtra)
 
 # Create table of top 10 most popular songs
 # First group by performer and song to make sure songs with same title aren't counted together
@@ -60,9 +56,10 @@ top_10 <- billboard %>%
   arrange(desc(count)) %>% 
   head(10)
 
+table_caption <- "Performers and their most popular songs, sorted by number of weeks on the Billboard Top 100 chart."
+kable(top_10, caption = table_caption, "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
 top_10
-
-
 ```
 
 
@@ -72,14 +69,14 @@ library(ggplot2)
 library(dplyr)
 
 billboard %>%
-   filter(year != "1958" & year != "2021") %>%
-   group_by(year) %>%
-   summarise(diversity = n_distinct(song)) %>%
-   ggplot(aes(x = as.numeric(year), y = diversity)) +
-   geom_line(colour = 'blue') +
-   xlab("Year") +
-   ylab("Number of Distinct Songs per Year") +
-   labs(title = "Diversity of Songs Over the Years")
+  filter(year != "1958" & year != "2021") %>%
+  group_by(year) %>%
+  summarise(diversity = n_distinct(song)) %>%
+  ggplot(aes(x = as.numeric(year), y = diversity)) +
+  geom_line(colour = 'blue') +
+  xlab("Year") +
+  ylab("Number of Distinct Songs per Year") +
+  labs(title = "Diversity of Songs Over the Years", caption="Number of Distinct Songs per Year that appeared on the Billboard Top 100 chart, from 1959 - 2020. There is a clear decrease in song diversity between the late 1960s to the early 2000s, perhaps due to the increasing availability of music sharing services like radio, vinyls, CDs, and MP3 players, and the emergence of celebrity musicians fostered in by record labels. Following the early 2000s, there is an uptick in diversity, perhaps due to the increasing democrtization of music creation and recording platforms.")
   
 ```
 
@@ -105,27 +102,13 @@ library(ggplot2)
 ggplot(data = artist_30, aes(x = reorder(performer, -unique_songs), y = unique_songs)) +
   geom_bar(stat = "identity", fill = "blue") +
   coord_flip() +
-  labs(x = "Performers", y = "Number of Songs", title = "Number of Songs by Performer") +
+  labs(x = "Performers", y = "Number of Songs", title = "Number of Songs by Performer", caption="All artists with at least 30 songs that were '10-week hits' on the Billboard Top 100 chart, organized by number of songs.") +
   theme_minimal() +
   theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ```
 
-
-
-```{r, Capital Metro data}
-metro <- read.csv('/Users/14072/Downloads/capmetro_UT.csv')
-
-library(ggplot2)
-
-metro$hour_of_day <- factor(metro$hour_of_day, levels = 0:23)
-boarding_by_hour_weekend <- aggregate(boarding ~ hour_of_day + weekend, data = metro, mean)
-
-ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weekend)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
-```
-
 ```{r, Green Buildings Plot}
+greenbuildings <- read.csv('/Users/14072/Downloads/greenbuildings.csv')
 library(ggplot2)
 
 ggplot(greenbuildings, aes(x = cluster_rent)) +
@@ -150,7 +133,24 @@ ggplot(greenbuildings, aes(x = factor(renovated), y = age, fill = factor(renovat
 ```
 
 
-```{r, Clusting & Dimensionality Reduction: PCA}
+```{r, Capital Metro data}
+metro <- read.csv('/Users/14072/Downloads/capmetro_UT.csv')
+
+library(ggplot2)
+
+metro$hour_of_day <- factor(metro$hour_of_day, levels = 0:23)
+boarding_by_hour_weekend <- aggregate(boarding ~ hour_of_day + weekend, data = metro, mean)
+
+ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weekend)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
+
+##note - we also have a visual on the python file...
+```
+
+
+
+```{r, Clustering & Dimensionality Reduction: PCA}
 library(dplyr)
 library(stats)
 library(pdp)
@@ -161,10 +161,6 @@ head(wine)
 continuous_vars <- wine[, 1:11]
 
 pca_result <- prcomp(continuous_vars, scale = TRUE)
-
-#pdf("pca_plot.pdf", width = 10, height = 8)
-
-#plot(pca_result)
 
 v_try = rnorm(2)
 v_try = v_try/sqrt(sum(v_try^2))
@@ -189,10 +185,72 @@ plot(pc1_scores, pc2_scores,
 ```{r, Clustering & Dimensionality Reduction: tSNE}
 ```
 
-```{r, Clustering & Dimensionality Reduction: K Means}
+```{r, Clustering & Dimensionality Reduction: Hierarchical Clustering}
+wine <- read.csv('/Users/14072/Downloads/wine.csv')
+
+columns_to_exclude <- c("quality", "color")
+wine_filtered <- wine[, !(names(wine) %in% columns_to_exclude)]
+wine_t <- t(wine_filtered)
+
+wine_scaled = scale(wine_t, center=TRUE, scale=TRUE)
+
+wine_distance_matrix = dist(wine_scaled, method='euclidean')
+
+hier_wine = hclust(wine_distance_matrix, method='average')
+
+plot(hier_wine, cex=0.8)
+
+cluster1 = cutree(hier_wine, k=6)
+summary(factor(cluster1))
+
+which(cluster1 == 1)
+which(cluster1 == 2)
+which(cluster1 == 3)
+
+hier_wine2 = hclust(wine_distance_matrix, method='single')
+
+plot(hier_wine2, cex=0.8)
+cluster2 = cutree(hier_wine2, k=6)
+summary(factor(cluster2))
+
+which(cluster2 == 1)
+which(cluster2 == 2)
+which(cluster2 == 3)
+
+summary(factor(cluster2))
+print(cluster1)
 ```
 
-```{r, Grocery Data}
+```{r, Market Segmentation}
+library(ggplot2)
+install.packages("ClusterR")
+library(ClusterR)
+library(foreach)
+install.packages("mosaic")
+library(mosaic)
+
+social_marketing <- read.csv('/Users/bethelkim/Downloads/social_marketing.csv', row.names = 1)
+social_marketing
+
+sm_t = t(social_marketing)
+
+row_to_exclude <- "chatter"
+row2_to_exclude <- "spam"
+
+sm_t2 <- subset(sm_t, row.names(sm_t) != row_to_exclude)
+sm_t3 <- subset(sm_t2, row.names(sm_t2) != row2_to_exclude)
+
+rowSums(sm_t2)
+
+sm_scaled = scale(sm_t3, center = TRUE, scale = TRUE)
+sm_dist_matrix = dist(sm_scaled, method = 'euclidean')
+
+hier_sm = hclust(sm_dist_matrix, method = 'complete')
+plot(hier_sm, cex = 0.7)
+# 8 clusters 
+```
+
+```{r, Association rule mining: Grocery Data}
 library(tidyverse)
 library(igraph)
 library(arules)  # has a big ecosystem of packages built around it
@@ -220,3 +278,5 @@ igraph::write_graph(groceries_graph4, file='groceries4.graphml', format = "graph
 groceries_graph2 = associations2igraph(subset(grocrules, lift>2), associationsAsNodes = FALSE)
 igraph::write_graph(groceries_graph2, file='groceries2.graphml', format = "graphml")
 ```
+
+
