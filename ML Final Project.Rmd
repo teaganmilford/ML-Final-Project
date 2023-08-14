@@ -151,7 +151,6 @@ ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weeke
   geom_bar(stat = "identity", position = "dodge") +
   labs(x = "Hour of Day", y = "Average Boarding", title = "Average Boarding by Hour of Day and Weekday/Weekend")
 
-##note - we also have a visual on the python file...
 ```
 
 
@@ -188,8 +187,6 @@ plot(pc1_scores, pc2_scores,
      main = "Scatter Plot of PC1 vs. PC2")
 ```
 
-```{r, Clustering & Dimensionality Reduction: tSNE}
-```
 
 ```{r, Clustering & Dimensionality Reduction: Hierarchical Clustering}
 wine <- read.csv('/Users/14072/Downloads/wine.csv')
