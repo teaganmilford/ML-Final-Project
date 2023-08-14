@@ -3,7 +3,7 @@ Collaborators: Teagan Milford, Madeleine Cope, Bethel Kim, Evan Hadd
 
 STA380 Exercises
 
-All questions addressed in the 'ML Final Project' Rmd file unless otherwise stated and linked to an ipnyb.
+All questions addressed in the ["[ML Final Project](https://github.com/teaganmilford/ML-Final-Project/blob/604d58572abc565994fa7ed1cd15b5959382e45e/ML%20Final%20Project.Rmd)"] Rmd file unless otherwise stated and linked to an ipnyb.
 
 ## Probability Practice
 ### Part A:
