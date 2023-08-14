@@ -13,19 +13,18 @@ The probability that someone has a positive test and has the disease is 0.20.
 
 ## Wrangling the Billboard Top 100
 ## Visual story telling part 1: Green Buildings
-The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a (much) lower rental price than a non-green building near a park and many walkable businesses. 
+The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a lower rental price than a non-green building near a park and many walkable businesses. 
 The `cluster` variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
 Next, we looked at the relationship between `rent price` and the `age` of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
+So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This shows that the median age of a building that has not been renovated is aroung 25 years, while the median age of a building that has been renovated is aronud 75 years. This suggests that age is not necessarily a characterizing factor since renovations can make major improvements to the existing stucture.
+Overall, we are skeptical of the stats guru's assessment since it does not address the potential confounding relationships between the variables, like how location could heavily influence rental prices, and does not seem rooted in the realities of real estate trends.
 
-(add more here)
-So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This reveals that ....
-!!
-!!
-!!!
-!!
-!
-!
-!
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/139ddbcd-ca2c-4eb8-8465-75a59f76e329)
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/a1b5449d-3f25-4b9f-a8e2-10a9ff828c24)
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/402824cd-9506-4b71-897b-3f8b1164c729)
+
 
 ## Visual story telling part 2: Capitol Metro data
 Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
