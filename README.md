@@ -90,5 +90,9 @@ In conclusion, we found that the two plots showed us that there seem to be trend
 ## Association rule mining
 add maybe a bit of discussion/explanation
 
+Refer to the ["[GraphML Lift 2](https://github.com/teaganmilford/ML-Final-Project/blob/b4845c32ac650ac5293afabbc0c1f1c5ee0ca16d/groceries2.graphml)"]
+
+Refer to the ["[GraphML Lift 4](https://github.com/teaganmilford/ML-Final-Project/blob/519ec0ba0aa848ba7b46742fe4ae8fcbbdc40503/groceries4.graphml)"]
+
 ## Image Classification with Neural Networks
 We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of __________. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows ________.
