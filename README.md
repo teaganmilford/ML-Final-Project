@@ -14,11 +14,12 @@ The probability that someone has a positive test and has the disease is 0.20.
 ## Wrangling the Billboard Top 100
 ## Visual story telling part 1: Green Buildings
 The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a (much) lower rental price than a non-green building near a park and many walkable businesses. 
-The cluster variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
-Next, we looked at the relationship between rent price and the age of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
+The `cluster` variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
+Next, we looked at the relationship between `rent price` and the `age` of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
 
 (add more here)
-So, we constructd a boxplot that considers age and whether a building has been renovated. This reveals that ....
+So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This reveals that ....
+
 
 ## Visual story telling part 2: Capitol Metro data
 Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
@@ -28,11 +29,11 @@ Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford
 ## Clustering and Dimensionality Reduction
 ### PCA
 To investigate the wine data, we first made a scree plot to look at the explained variables compared to dimensionality. This plot reveals that there is a major drop (from 22.2% to 13.8%) in the percentage of explained variances when the dimension is changed from 2 to 3, and there is an additionally drastic drop (from 13.8% to 8.6%) when the dimension is changed from 3 to 4. Based on this, we created a cluster plot with 3 clusters that shows a clear segmentaton. There are some points that appear to be outliers in the blue and green clusters based on the visualization.
-We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of 'color' and 'quality'. 
+We also created a scatterplot of Principle Component 1 and Principle Component 2 that includes information from the 11 continuous variables that exist in the wine dataset, excluding the discrete variables of `color` and `quality`. 
 
 ### Hierarchical Clustering
-To conduct hierarchical clustering, we filtered the wine data to exclude 'color' and 'quality', then created a wine distance matrix using euclidean distance. We decided to try clustering using two methods - average and single - so we could look at how average pairwise distances and minimum point distances between clusters compare. 
-Neither clustering method was especially effective in clustering the points. Both use 'total sulfur dioxide' as the overarching factor and 'free sulfur dioxide' as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
+To conduct hierarchical clustering, we filtered the wine data to exclude `color` and `quality`, then created a wine distance matrix using euclidean distance. We decided to try clustering using two methods - average and single - so we could look at how average pairwise distances and minimum point distances between clusters compare. 
+Neither clustering method was especially effective in clustering the points. Both use `total sulfur dioxide` as the overarching factor and `free sulfur dioxide` as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
 
 ### tSNE
 Refer to the Python Notebook: ["[tSNE - Wine](https://github.com/teaganmilford/ML-Final-Project/blob/4c56d73dc37a8bbaf3c9ad506cd84ee25d693297/tSNE%20Red%20%26%20White%20Wine.ipynb)"]
@@ -82,3 +83,5 @@ In conclusion, we found that the two plots showed us that there seem to be trend
 
 ## Association rule mining
 add maybe a bit of discussion/explanation
+
+## Image Classification with Neural Networks
