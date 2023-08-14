@@ -120,6 +120,13 @@ Furthermore, the lift 2 graph can serve as a tool for organizing items in close 
 ## Image Classification with Neural Networks
 Refer to the Python Notebook: ["[Neural Network](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
 
-We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'. Utilizing the confusion matrix it can be seen that the model struggled between Aannual Crop and Permanat Crop as well as Sea Lake and Forest. The confusion may have come from the fact that these images looked very similar are were low enough quality it couldn't make accurate distinctions. The issues are really apparent in the highway folder where highways were through forests or lakes and not obvious enough in the actual photo to create accurate predictions. 
+We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Here are some examples of the images.
+
+<img width="729" alt="Screenshot 2023-08-14 at 12 57 41 PM" src="https://github.com/teaganmilford/ML-Final-Project/assets/139559963/d78b8300-e940-49ed-a15c-933fec63fcd5">
+
+Our training model yielded an overall test accuracy of 28.23%. There are some example images sampled in the Rmd file, which show the model's poor performance. This may be due to the images being low quality, insufficient amount of training data, and/or overfitting in the training stage, although since it is unsupervised we cannot be certain. The confusion matrix shows that the model predicted 'Industrial' images most accurately, followed by 'AnnualCrop' and 'SeaLake'. 
+
+
+However, the model struggled between Aannual Crop and Permanat Crop as well as Sea Lake and Forest. The confusion may have come from the fact that these images looked very similar are were low enough quality it couldn't make accurate distinctions. The issues are really apparent in the highway folder where highways were through forests or lakes and not obvious enough in the actual photo to create accurate predictions. 
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/d8b1482a-671c-4e6c-9cae-ff61812b3fa1)
