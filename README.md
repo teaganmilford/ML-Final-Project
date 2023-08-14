@@ -14,7 +14,8 @@ The probability that someone has a positive test and has the disease is 0.20.
 ## Wrangling the Billboard Top 100
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/4a6605f2-10c7-44f0-b579-13c4d829498f)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/afba0cf2-acb1-49fe-95b9-47479c709d5e)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/3eeeecbd-5d01-4085-a700-e4ecc8f01b76)
+
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/7a5e047c-d57b-42a9-8b47-02814ddcb35e)
 
@@ -26,11 +27,11 @@ Next, we looked at the relationship between `rent price` and the `age` of the bu
 So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This shows that the median age of a building that has not been renovated is aroung 25 years, while the median age of a building that has been renovated is aronud 75 years. This suggests that age is not necessarily a characterizing factor since renovations can make major improvements to the existing stucture.
 Overall, we are skeptical of the stats guru's assessment since it does not address the potential confounding relationships between the variables, like how location could heavily influence rental prices, and does not seem rooted in the realities of real estate trends.
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/139ddbcd-ca2c-4eb8-8465-75a59f76e329)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/b0cc8adc-0da0-43f8-a657-d9021e9aac01)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/a1b5449d-3f25-4b9f-a8e2-10a9ff828c24)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/9be18449-b5ed-4d4e-9b7f-e6a8ec779214)
 
-![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/402824cd-9506-4b71-897b-3f8b1164c729)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/12920dd5-46e3-482e-89ab-90fb51d40ead)
 
 
 ## Visual story telling part 2: Capitol Metro data
