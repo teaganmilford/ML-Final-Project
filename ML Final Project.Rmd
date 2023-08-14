@@ -159,25 +159,18 @@ ggplot(boarding_by_hour_weekend, aes(x = hour_of_day, y = boarding, fill = weeke
 library(dplyr)
 library(stats)
 library(pdp)
-
 wine <- read.csv('/Users/14072/Downloads/wine.csv')
 head(wine)
 
-continuous_vars <- wine[, 1:11]
+num_vars <- wine[, 1:11] 
 
-pca_result <- prcomp(continuous_vars, scale = TRUE)
+scaled_data <- scale(num_vars) 
+wine <- data.frame(color = c("red", "white"))
 
-v_try = rnorm(2)
-v_try = v_try/sqrt(sum(v_try^2))
+wine$Encoded_Color <- as.numeric(factor(wine$color))
 
-#plot(pca_result, pch=19, col=rgb(0.3,0.3,0.3,0.3))
-#segments(0, 0, v_try[1], v_try[2], col='red', lwd=4)
-
-print(pca_result$rotation)
-
-summary(pca_result)
-
-scores <- as.data.frame(pca_result$x)
+combined <- cbind(scaled_data, wine$Encoded_Color)
+pca_result <- prcomp(combined)
 
 pc1_scores <- pca_result$x[, "PC1"]
 pc2_scores <- pca_result$x[, "PC2"]
@@ -186,16 +179,15 @@ plot(pc1_scores, pc2_scores,
      xlab = "PC1 Score", ylab = "PC2 Score", 
      main = "Scatter Plot of PC1 vs. PC2")
 
-scree_data <- data.frame(
-  PC = 1:length(pca_result$sdev),
-  Variance = pca_result$sdev^2 / sum(pca_result$sdev^2)
-)
+fviz_eig(pca_result, addlabels = TRUE)
 
-ggplot(scree_data, aes(x = PC, y = Variance)) +
-  geom_bar(stat = "identity", fill = "steelblue") +
-  labs(x = "Principal Component", y = "Variance Explained",
-       title = "Screen Plot")
+num_clusters <- 3 
 
+pca_data <- as.data.frame(pca_result$x[, 1:2])
+
+kmeans_result <- kmeans(pca_data, centers = num_clusters)
+
+fviz_cluster(kmeans_result, data = pca_data, geom = "point")
 ```
 
 
