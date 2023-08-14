@@ -104,7 +104,11 @@ Our second graph is a result of clustering by each author instead of by just the
 In conclusion, we found that the two plots showed us that there seem to be trends across content in the dataset. In our first plot, we saw that certain words were clustered together that seemed to be related to the types of articles they would be found in. Similarly, we found that authors who typically write about certain material were more likely to be clustered together in our second plot. This means that our general intuition on wanting to confirm if authors were clustered by content was correct seeing as this is the general trend we found. 
 
 ## Association rule mining
-add maybe a bit of discussion/explanation
+This study involved analyzing a dataset of people's grocery store baskets, aiming to construct a matrix that reveals the likelihood of particular purchases based on the presence of specific items in their carts. Initially, we employed a support threshold of 0.005, ensuring that the associations between items were not just coincidental. Subsequently, a lift threshold of 2 was applied, as the data lacked instances of high lift values. However, the resulting lift 2 graph proved somewhat intricate and congested around a few central items. As a remedy, we re-evaluated the connections using a lift threshold of 4, which isolated only the most prominent items.
+
+Within the lift 4 model, we identified six items that hold the highest significance for a grocery store. These items, due to their perishable nature, are in high demand and are consequently purchased most frequently. These findings possess valuable implications for optimizing grocery store layout and design. Given the distinctiveness of these six items, strategically distributing them throughout the store can be advantageous, encouraging customers to purchase additional items as they traverse these strategically placed aisles.
+
+Furthermore, the lift 2 graph can serve as a tool for organizing items in close proximity or designing displays that stimulate the purchase of complementary products. In essence, grocery stores consist of staple items, notably perishables, and complementary peripheral items. Understanding the categorization of food items is pivotal for store layout planning, offering the potential to enhance overall profitability.
 
 Refer to the ["[GraphML Lift 2](https://github.com/teaganmilford/ML-Final-Project/blob/b4845c32ac650ac5293afabbc0c1f1c5ee0ca16d/groceries2.graphml)"]
 
