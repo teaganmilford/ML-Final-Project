@@ -21,7 +21,8 @@ Next, we looked at the relationship between rent price and the age of the buildi
 So, we constructd a boxplot that considers age and whether a building has been renovated. This reveals that ....
 
 ## Visual story telling part 2: Capitol Metro data
-[[Capital Metro] "(https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
+["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
+
 ![capmet](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/2f71d239-feaf-4307-b06a-7f2a98ba9e48)
 
 ## Clustering and Dimensionality Reduction
