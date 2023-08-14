@@ -19,7 +19,13 @@ Next, we looked at the relationship between `rent price` and the `age` of the bu
 
 (add more here)
 So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This reveals that ....
-
+!!
+!!
+!!!
+!!
+!
+!
+!
 
 ## Visual story telling part 2: Capitol Metro data
 Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
