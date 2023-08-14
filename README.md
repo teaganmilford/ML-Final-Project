@@ -12,6 +12,13 @@ The probability of being a Truthful clicker who said yes is 0.71.
 The probability that someone has a positive test and has the disease is 0.20.
 
 ## Wrangling the Billboard Top 100
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/a51bbfab-de3b-461b-827b-de4dc69e7314)
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/afba0cf2-acb1-49fe-95b9-47479c709d5e)
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/abcfafe0-83d7-4d2b-9f29-412f23b925d3)
+
+
 ## Visual story telling part 1: Green Buildings
 The stats guru is presenting some interesting findings, although they do not tell the complete story. They ignored important characteristics that impact rent prices, like location, in favor of simplifying the analysis and breaking it into green and non-green buildings. For example, a green building built in a high-crime area without anything in walkable distance would likely have a lower rental price than a non-green building near a park and many walkable businesses. 
 The `cluster` variable groups buildings together based on proximity, so we looked at the average rents per cluster to investigate rent diversity. Most rents tended to be above $1500, with the highest exceeding $2000, regardless of green or non-green status.
@@ -42,6 +49,10 @@ We also created a scatterplot of Principle Component 1 and Principle Component 2
 ### Hierarchical Clustering
 To conduct hierarchical clustering, we filtered the wine data to exclude `color` and `quality`, then created a wine distance matrix using euclidean distance. We decided to try clustering using two methods - average and single - so we could look at how average pairwise distances and minimum point distances between clusters compare. 
 Neither clustering method was especially effective in clustering the points. Both use `total sulfur dioxide` as the overarching factor and `free sulfur dioxide` as the secondary factor. Aside from that, neither splits clusters the variables in meaningful ways that yield more interesting information that could have been gained from another model.
+
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/c89a4acf-521c-4877-a386-2005a09cd515)
+![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/caf25d53-69b0-4176-a248-51eae7c40e8f)
+
 
 ### tSNE
 Refer to the Python Notebook: ["[tSNE - Wine](https://github.com/teaganmilford/ML-Final-Project/blob/4c56d73dc37a8bbaf3c9ad506cd84ee25d693297/tSNE%20Red%20%26%20White%20Wine.ipynb)"]
