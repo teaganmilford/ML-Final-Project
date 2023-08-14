@@ -130,3 +130,6 @@ Our training model yielded an overall test accuracy of 28.23%. There are some ex
 However, the model struggled between Aannual Crop and Permanat Crop as well as Sea Lake and Forest. The confusion may have come from the fact that these images looked very similar are were low enough quality it couldn't make accurate distinctions. The issues are really apparent in the highway folder where highways were through forests or lakes and not obvious enough in the actual photo to create accurate predictions. 
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/d8b1482a-671c-4e6c-9cae-ff61812b3fa1)
+
+
+* Note: We did not have a computer with high enough power or RAM to run the training data a lot. With a higher powered computer, the accuracy may have been better since the model could have learned the pattern more consistently. 
