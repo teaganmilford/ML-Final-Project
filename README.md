@@ -84,6 +84,8 @@ We used hierarchical clustering in order to better identify NutrientH20’s pote
 
 Below is the cluster dendrogram that represents the market segments described above: 
 ![MarketSegmentation](https://github.com/teaganmilford/ML-Final-Project/assets/122923906/06c40b19-a112-4466-80d1-f9b650520fc5)
+<img width="481" alt="twitter 1" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/f192b7bd-7320-48f5-ba24-37874beff8d5">
+
 
 ## The Reuters Corpus
 Refer to the Python Notebook: ["[Reuters](https://github.com/teaganmilford/ML-Final-Project/blob/69cd93ec3997b6b82e3704a068e59d8396f99fae/Reuters%20.ipynb)"]
