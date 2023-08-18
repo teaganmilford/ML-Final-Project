@@ -42,6 +42,7 @@ Overall, we are skeptical of the stats guru's assessment since it does not addre
 
 ## Visual story telling part 2: Capitol Metro data
 Refer to the Python Notebook: ["[Capital Metro](https://github.com/teaganmilford/ML-Final-Project/blob/d822075af107e847d80c1c493c3eaa953357e03e/ML%20Final%20Project%20CapMet.ipynb)"]
+![capmet](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/ef1af62d-3be6-4e88-8867-7ee68a5d0dd0)
 
 ![capmet](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/2f71d239-feaf-4307-b06a-7f2a98ba9e48)
 
