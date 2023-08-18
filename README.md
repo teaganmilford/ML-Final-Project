@@ -114,6 +114,10 @@ Within the lift 4 model, we identified six items that hold the highest significa
 
 
 Furthermore, the lift 2 graph can serve as a tool for organizing items in close proximity or designing displays that stimulate the purchase of complementary products. In essence, grocery stores consist of staple items, notably perishables, and complementary peripheral items. Understanding the categorization of food items is pivotal for store layout planning, offering the potential to enhance overall profitability.
+<img width="724" alt="Grocieries Lift 2 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/a54f9e4f-68ef-4bae-828f-16818d90a822">
+<img width="731" alt="Grocieries Lift 4 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/79746955-74d8-4b3e-82eb-c4697415ae68">
+
+
 
 <img width="724" alt="Grocieries Lift 2 Graph" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/dd778f80-5d5a-4ac5-8686-d284ca5c4a21">
 (Graph with lift 2 and labels)
