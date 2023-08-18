@@ -16,7 +16,8 @@ The probability that someone has a positive test and has the disease is 0.20.
 <img width="504" alt="billboard 1" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/6964ad9b-8a73-44fc-89b8-75c2a8de4e4a">
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/3eeeecbd-5d01-4085-a700-e4ecc8f01b76)
-<img width="512" alt="billboard 2" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/43d0cc2b-d5d4-428d-8ff5-bd2026505fe3">
+<img width="510" alt="billboard 2 real" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/c7747c87-6079-4a7a-8c51-a5dbaed947f6">
+
 
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/7a5e047c-d57b-42a9-8b47-02814ddcb35e)
