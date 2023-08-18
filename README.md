@@ -58,8 +58,9 @@ We also created a scatterplot of Principle Component 1 and Principle Component 2
 
 
 <img width="500" alt="wine 1" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/74f0bb6d-1924-4902-bdba-18449f147b61">
-![PCA2](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/aeb76351-cf35-4f94-ac24-648991e12d5f)
-![PCA 3](https://github.com/teaganmilford/ML-Final-Project/assets/141253325/c8742dc6-8d82-4f44-b8dc-ce72e3a8b421)
+<img width="481" alt="pca2real" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/355f0ba2-e253-439f-bb59-f34b4330984f">
+<img width="479" alt="pca3real" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/b1274237-5587-4a87-b187-48e43adc02cc">
+
 
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/9bdecd3f-daf4-44ae-9b53-2f2b01a2ae23)
