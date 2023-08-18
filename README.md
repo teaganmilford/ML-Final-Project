@@ -124,6 +124,7 @@ Furthermore, the lift 2 graph can serve as a tool for organizing items in close 
 Refer to the Python Notebook: ["[Neural Network](https://github.com/teaganmilford/ML-Final-Project/blob/040eaf44c968a18d0ec002fcf393b1dfb1559f2f/Neural%20Network%20ML%20Final.ipynb)"]
 
 We trained a neural network on the image agricultural image data based on their 3-dimensional red-green-blue characteristics. Here are some examples of the images.
+<img width="554" alt="neural net image 1" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/f8b0801f-1230-4670-a8cb-1c12bde2e129">
 
 <img width="729" alt="Screenshot 2023-08-14 at 12 57 41 PM" src="https://github.com/teaganmilford/ML-Final-Project/assets/139559963/d78b8300-e940-49ed-a15c-933fec63fcd5">
 
@@ -134,5 +135,6 @@ However, the model struggled between Aannual Crop and Permanat Crop as well as S
 
 ![image](https://github.com/teaganmilford/ML-Final-Project/assets/141160657/d8b1482a-671c-4e6c-9cae-ff61812b3fa1)
 
+<img width="460" alt="neural net 2" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/9d9b8dab-a489-49c1-99d8-5feab80f8dca">
 
 * Note: We did not have a computer with high enough power or RAM to run the training data a lot. With a higher powered computer, the accuracy may have been better since the model could have learned the pattern more consistently. 
