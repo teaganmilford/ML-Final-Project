@@ -29,6 +29,8 @@ The `cluster` variable groups buildings together based on proximity, so we looke
 Next, we looked at the relationship between `rent price` and the `age` of the building; contrary to what a person may assume, age does not appear to have a decisive influence on rent price. We hypothesized that this may be due to updates or renovations that occured in the building that retroactively improve appliances, amenities, and infrastructure.
 So, we constructd a boxplot that considers `age` and whether a building has been `renovated`. This shows that the median age of a building that has not been renovated is aroung 25 years, while the median age of a building that has been renovated is aronud 75 years. This suggests that age is not necessarily a characterizing factor since renovations can make major improvements to the existing stucture.
 Overall, we are skeptical of the stats guru's assessment since it does not address the potential confounding relationships between the variables, like how location could heavily influence rental prices, and does not seem rooted in the realities of real estate trends.
+
+
 <img width="512" alt="green 1" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/2630a115-ec75-4e5f-9e28-424e953e355e">
 <img width="520" alt="green 2" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/111cfc3c-0823-47c6-addf-fa831d8d8d18">
 <img width="533" alt="green 3" src="https://github.com/teaganmilford/ML-Final-Project/assets/141253325/802f130a-db6a-4b1e-b830-332ed6117ca7">
